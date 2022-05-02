@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
-    "lint": "npx eslint **/**.{js,json,jsx,ts,tsx,vue}",
+    "lint": "npx eslint /{,!(node_modules)/**/}*.{js,jsx,ts,tsx,vue}",
     "preview": "vite preview"
   },
   "dependencies": {

@@ -21,6 +21,12 @@ module.exports = {
         "@typescript-eslint"
     ],
     "rules": {
+        "sort-imports": ["error"],
+        "sort-keys": ["error", "asc", {
+            "caseSensitive": true,
+            "minKeys": 2,
+            "natural": true
+        }],
         "vue/component-tags-order": ["error", {
             "order": [
                 "template",
@@ -29,8 +35,8 @@ module.exports = {
             ]
         }],
         "vue/first-attribute-linebreak": ["error", {
-            "singleline": "below",
-            "multiline": "below"
+            "multiline": "below",
+            "singleline": "below"
           }],
         "vue/no-multiple-template-root": "off"
     }
