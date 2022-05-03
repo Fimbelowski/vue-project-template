@@ -7,8 +7,9 @@
     "build": "vue-tsc --noEmit && vite build",
     "lint": "npx eslint /{,!(node_modules)/**/}*.{js,jsx,ts,tsx,vue}",
     "preview": "vite preview",
-    "test": "vitest",
-    "test:coverage": "vitest run --coverage"
+    "test": "vitest --run",
+    "test:coverage": "vitest --run --coverage",
+    "test:watch": "vitest"
   },
   "dependencies": {
     "vue": "^3.2.25"
