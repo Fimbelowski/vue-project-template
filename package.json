@@ -6,7 +6,9 @@
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
     "lint": "npx eslint /{,!(node_modules)/**/}*.{js,jsx,ts,tsx,vue}",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "vitest",
+    "test:coverage": "vitest run --coverage"
   },
   "dependencies": {
     "vue": "^3.2.25"
@@ -16,10 +18,14 @@
     "@typescript-eslint/eslint-plugin": "^5.21.0",
     "@typescript-eslint/parser": "^5.21.0",
     "@vitejs/plugin-vue": "^2.3.1",
+    "@vue/test-utils": "^2.0.0-rc.18",
+    "c8": "^7.11.2",
     "eslint": "^8.14.0",
     "eslint-plugin-vue": "^8.7.1",
+    "happy-dom": "^3.1.0",
     "typescript": "^4.5.4",
     "vite": "^2.9.5",
+    "vitest": "^0.10.1",
     "vue-tsc": "^0.34.7"
   }
 }
