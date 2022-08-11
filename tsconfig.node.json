@@ -1,15 +1,9 @@
 {
   "compilerOptions": {
     "composite": true,
-    "module": "esnext",
-    "moduleResolution": "node"
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "allowSyntheticDefaultImports": true
   },
-  "include": [
-    "vite.config.ts",
-    "src/**/*",
-    "tests/**/*",
-  ],
-  "vueCompilerOptions": {
-    "experimentalDisableTemplateSupport": true,
-  }
+  "include": ["vite.config.ts"]
 }
