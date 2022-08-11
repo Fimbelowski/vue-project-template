@@ -1,6 +1,6 @@
 import { mount } from '@vue/test-utils';
 import { describe, expect, it, beforeEach, afterEach } from 'vitest';
-import HelloWorld from '../../src/components/HelloWorld.vue';
+import HelloWorld from '@/components/HelloWorld.vue';
 
 describe('HellowWorld.vue', () => {
   const props = {
