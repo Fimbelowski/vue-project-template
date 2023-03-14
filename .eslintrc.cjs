@@ -37,7 +37,6 @@ module.exports = {
   },
   plugins: ["import", "import-newlines", "vue", "@typescript-eslint"],
   rules: {
-    "import-newlines/enforce": ["error", 1],
     "import/no-extraneous-dependencies": [
       "error",
       {
@@ -55,14 +54,6 @@ module.exports = {
           "type",
         ],
         "newlines-between": "always",
-      },
-    ],
-    "object-curly-newline": [
-      "error",
-      {
-        ImportDeclaration: {
-          minProperties: 2,
-        },
       },
     ],
     "sort-imports": [
