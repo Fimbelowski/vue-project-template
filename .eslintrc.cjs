@@ -3,24 +3,24 @@ module.exports = {
     browser: true,
     es2021: true,
   },
-  extends: ["airbnb-base", "airbnb-typescript/base", "prettier"],
+  extends: ['airbnb-base', 'airbnb-typescript/base', 'prettier'],
   overrides: [
     {
-      extends: ["plugin:vue/vue3-recommended"],
-      files: ["src/**/*.vue"],
+      extends: ['plugin:vue/vue3-recommended', 'prettier'],
+      files: ['src/**/*.vue'],
       rules: {
-        "no-spaced-func": "off",
-        "vue/component-api-style": ["error", ["script-setup"]],
-        "vue/component-tags-order": [
-          "error",
+        'no-spaced-func': 'off',
+        'vue/component-api-style': ['error', ['script-setup']],
+        'vue/component-tags-order': [
+          'error',
           {
-            order: ["script", "template", "style"],
+            order: ['script', 'template', 'style'],
           },
         ],
-        "vue/padding-line-between-blocks": ["error", "always"],
-        "vue/sort-keys": [
-          "error",
-          "asc",
+        'vue/padding-line-between-blocks': ['error', 'always'],
+        'vue/sort-keys': [
+          'error',
+          'asc',
           {
             caseSensitive: false,
           },
@@ -29,35 +29,35 @@ module.exports = {
     },
   ],
   parserOptions: {
-    ecmaVersion: "latest",
-    extraFileExtensions: [".vue"],
-    parser: "@typescript-eslint/parser",
-    project: "./tsconfig.eslint.json",
-    sourceType: "module",
+    ecmaVersion: 'latest',
+    extraFileExtensions: ['.vue'],
+    parser: '@typescript-eslint/parser',
+    project: './tsconfig.eslint.json',
+    sourceType: 'module',
   },
-  plugins: ["import", "import-newlines", "vue", "@typescript-eslint"],
+  plugins: ['import', 'import-newlines', 'vue', '@typescript-eslint'],
   rules: {
-    "import/no-extraneous-dependencies": [
-      "error",
+    'import/no-extraneous-dependencies': [
+      'error',
       {
         devDependencies: true,
       },
     ],
-    "import/order": [
-      "error",
+    'import/order': [
+      'error',
       {
         groups: [
-          "builtin",
-          "external",
-          ["internal", "parent", "sibling", "index"],
-          "object",
-          "type",
+          'builtin',
+          'external',
+          ['internal', 'parent', 'sibling', 'index'],
+          'object',
+          'type',
         ],
-        "newlines-between": "always",
+        'newlines-between': 'always',
       },
     ],
-    "sort-imports": [
-      "error",
+    'sort-imports': [
+      'error',
       {
         allowSeparatedGroups: true,
         ignoreCase: true,
@@ -65,12 +65,12 @@ module.exports = {
     ],
   },
   settings: {
-    "import/parsers": {
-      "@typescript-eslint/parser": [".ts", ".tsx"],
+    'import/parsers': {
+      '@typescript-eslint/parser': ['.ts', '.tsx'],
     },
-    "import/resolver": {
+    'import/resolver': {
       typescript: {
-        project: "./tsconfig.json",
+        project: './tsconfig.json',
       },
     },
   },
