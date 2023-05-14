@@ -3,6 +3,6 @@
 </template>
 
 <style lang="scss">
-@import "./sass/base/reset";
-@import "./sass/base/typography";
+@import './sass/base/reset';
+@import './sass/base/typography';
 </style>
